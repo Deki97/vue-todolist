@@ -25,7 +25,32 @@ const app = new Vue(
     {
         el: '#root',
         data: {
-
+            todos: [
+                {
+                    text: 'Fare la spesa',
+                    done: true
+                },
+                {
+                    text: 'Pagare la bolletta',
+                    done: false
+                },
+                {
+                    text: 'Andare dal parrucchiere',
+                    done: true
+                },
+                {
+                    text: 'Portare fuori il cane',
+                    done: false
+                },
+                {
+                    text: 'Ordinare la pizza',
+                    done: false
+                },
+                {
+                    text: 'Fare l\'esercizio del pomeriggio',
+                    done: true
+                }
+            ]
         },
         methods: {
 
