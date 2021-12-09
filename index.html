@@ -18,7 +18,7 @@
 
         <main>
             <div class="add-new-todo">
-                <input v-model="newToDoText" type="text" placeholder="Nuova Todo">
+                <input @keyup.enter="addNewToDo" v-model="newToDoText" type="text" placeholder="Nuova Todo">
                 <button @click="addNewToDo">Aggiungi</button>
             </div>
 
