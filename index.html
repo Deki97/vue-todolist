@@ -24,7 +24,7 @@
 
             <div class="todo-list">
                 <ul>
-                    <li>
+                    <!-- <li>
                         Fare la spesa
                         <span>
                             <i class="fas fa-times"></i>
@@ -56,6 +56,14 @@
                     </li>
                     <li>
                         Fare l'esercizio del pomeriggio
+                        <span>
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </li> -->
+
+                    <!-- Tramite un v-for scorro il mio array di oggetti e per ogni elemento stampo la proprietà 'text' -->
+                    <li :class="{ 'todo-done' : todo.done}" v-for="todo in todos">
+                        {{ todo.text }}
                         <span>
                             <i class="fas fa-times"></i>
                         </span>

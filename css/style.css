@@ -46,7 +46,7 @@ button {
     margin-top: 30px;
 
     /* test */
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 }
 
 li {
@@ -59,4 +59,10 @@ li {
 
 i {
     font-size: 15px;
+    cursor: pointer;
+}
+
+/* Classe che applico alla li se risulta come task fatta (done) */
+.todo-done {
+    text-decoration: line-through;
 }
