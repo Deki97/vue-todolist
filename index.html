@@ -63,7 +63,7 @@
 
                     <!-- Tramite un v-for scorro il mio array di oggetti e per ogni elemento stampo la proprietà 'text' -->
                     <li :class="{ 'todo-done' : todo.done}" v-for="(todo, index) in todos">
-                        <a @click="invertToDoOrDone(index)" href="">{{ todo.text }}</a>
+                        <a @click="invertToDoOrDone(index)">{{ todo.text }}</a>
                         <span>
                             <i @click="removeToDo(index)" class="fas fa-times"></i>
                         </span>
