@@ -16,7 +16,7 @@
 
 // Bonus:
 // 1- [x] oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista
-// 2- cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
+// 2- [x] cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
 
 
 Vue.config.devtools = true;
@@ -66,6 +66,9 @@ const app = new Vue(
                         }
                     );
                 } 
+            },
+            invertToDoOrDone: function(index) {
+                this.todos[index].done = !this.todos[index].done;
             }
         }
     }
